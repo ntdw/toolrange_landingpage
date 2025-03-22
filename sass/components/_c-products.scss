@@ -1,0 +1,68 @@
+.toolrange {
+  &__products {
+    width: 100%;
+    padding: 80px 80px 50px 80px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__list {
+      max-width: 2560px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 26px;
+      margin: 80px 0 105px;
+    }
+
+    &__item {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      .product-img {
+        width: 100%;
+        padding: 20px 15px 3px 15px;
+
+        > img {
+          width: 100%;
+        }
+      }
+
+      .product-info {
+        padding: 12px 10px;
+
+        > p:first-child {
+          color: #131313;
+          font-family: "Kanit-Medium";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 117.313%;
+          text-transform: capitalize;
+        }
+
+        > p:last-child {
+          margin-top: 3.19px;
+          display: flex;
+          align-items: center;
+          gap: 3.98px;
+
+          > span {
+            color: #fbb039;
+            font-family: "Kanit-Regular";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 123%;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}

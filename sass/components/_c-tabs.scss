@@ -1,0 +1,79 @@
+.toolrange {
+  &__tabs__wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+
+  &__tab {
+    flex-shrink: 0;
+    padding: 10px;
+
+    color: #131313;
+    font-family: "Kanit-Regular";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+  }
+
+  &__tab.tab-active {
+    color: #fbb039;
+    position: relative;
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #fbb039;
+    }
+  }
+
+  &__tab:hover {
+    color: #fbb039;
+  }
+
+  &__views {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+
+  &__view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s ease-out;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__view.view-active {
+    visibility: visible;
+    opacity: 1;
+  }
+}

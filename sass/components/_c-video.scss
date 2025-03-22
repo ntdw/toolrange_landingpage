@@ -1,0 +1,27 @@
+.toolrange {
+  &__video {
+    // margin-top: -4px;
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // position: relative;
+    // z-index: 1;
+
+    > img {
+      width: 100%;
+    }
+
+    &-icon {
+      position: absolute;
+      cursor: pointer;
+      transition: 0.2s ease-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

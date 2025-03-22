@@ -1,0 +1,8 @@
+.sp-on {
+  display: none;
+}
+@media (max-width: 455px) {
+  .sp-on {
+    display: block !important;
+  }
+}

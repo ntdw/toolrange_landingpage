@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+// HTML5 [true]
+$html5: true;
+
+// Compass
+$legacy-support-for-ie6: true;
+$legacy-support-for-ie7: true;
+
+$experimental-support-for-webkit: true;
+$experimental-support-for-mozilla: true;
+$experimental-support-for-opera: true;
+$experimental-support-for-microsoft: true;
+$experimental-support-for-khtml: false;
+
+// ie9 use svg
+$experimental-support-for-svg: true;
+
+// Overall width of the page
+$baseWidth: 1920px;
+
+// Font-family
+$fontNoto: "Noto Sans JP", sans-serif;
+$fontMontserrat: "Montserrat", sans-serif;
+
+// Text color
+$textColor: #222;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #000;
+  font-feature-settings: "halt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+section {
+  background: #fff;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s ease;
+  display: inline-block;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.08);
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+table {
+  width: 100%;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}

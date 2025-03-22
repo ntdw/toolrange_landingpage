@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------------------
+// MediaQuery
+// ----------------------------------------------------------------------
+
+@mixin pc {
+  // PC
+  @media only screen and (min-width: $width-pc) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  // Tablet
+  @media only screen and (min-width: $width-smartphone) and (max-width: $width-tablet-max) {
+    @content;
+  }
+}
+
+@mixin sp {
+  // Smartphone
+  @media only screen and (max-width: $width-smartphone) {
+    @content;
+  }
+}

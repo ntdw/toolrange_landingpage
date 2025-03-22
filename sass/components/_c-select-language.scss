@@ -1,0 +1,55 @@
+.toolrange {
+  .select-language {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &__view {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+
+    &::after {
+      content: url("../../assets/imgs/common/svgs/drop_down.svg");
+    }
+
+    &__options {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      max-height: 0;
+      padding: 8px 12px;
+      border-radius: 2px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      z-index: 999;
+      transition: 0.2s ease-out;
+    }
+
+    &__option {
+      display: block;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+
+      > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .select-language.show {
+    overflow: initial;
+
+    .select-language__options {
+      max-height: 75px;
+    }
+  }
+}
