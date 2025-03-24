@@ -205,7 +205,7 @@
           overflow: initial;
 
           &::before {
-            background-color: transparent;
+            display: none;
           }
 
           .drop-down__list {
@@ -234,18 +234,6 @@
       @media (max-width: 1230px) {
         gap: 11px;
       }
-
-      .toolrange__language {
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-
-      .toolrange__navbar-icon {
-        @media (max-width: 768px) {
-          display: flex;
-        }
-      }
     }
 
     &__search {
@@ -264,13 +252,14 @@
         width: 100%;
       }
 
-      > img {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 32%;
+        left: 19px;
         width: 21px;
         height: 21px;
-        position: absolute;
-        top: 50%;
-        left: 19px;
-        transform: translateY(-50%);
+        background-image: url("../../assets/imgs/common/svgs/search.svg");
 
         @media (max-width: 1230px) {
           width: 18px;
@@ -306,11 +295,93 @@
           font-size: 18px;
         }
       }
+
+      &-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 0;
+        background: rgba(0, 0, 0, 0.36);
+        opacity: 0;
+        overflow: hidden;
+        z-index: 9998;
+        transition: 0.2s ease-out;
+      }
+
+      &-wrapper.show {
+        height: 100vh;
+        opacity: 1;
+      }
+
+      &-box {
+        width: 100%;
+        padding: 80px 144px 50px;
+        background-color: #fff;
+
+        > .box-input-wrapper {
+          position: relative;
+
+          &::before {
+            content: url("../../assets/imgs/common/svgs/search2.svg");
+            position: absolute;
+            top: 3.5px;
+            right: calc(100% + 14px);
+          }
+
+          > input {
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+
+            color: #131313;
+            font-family: "Kanit-Regular";
+            font-size: 32px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.96px;
+
+            &:focus {
+              border-color: transparent;
+            }
+          }
+
+          > img {
+            position: absolute;
+            top: 17.25px;
+            width: 17.5px;
+            height: 17.5px;
+            left: calc(100% + 14px);
+            cursor: pointer;
+          }
+        }
+      }
+
+      &-suggestions {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        > li {
+          color: #404040;
+          font-family: "Kanit-Medium";
+          font-size: 20px;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+      }
     }
 
     &__navbar-icon {
       cursor: pointer;
       display: none;
+
+      @media (max-width: 768px) {
+        display: flex;
+      }
     }
 
     &__contact {

@@ -6,6 +6,9 @@
     gap: 2px;
     cursor: pointer;
     overflow: hidden;
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     &__view {
       width: 24px;
