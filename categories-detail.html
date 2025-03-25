@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories detail</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="toolrange">
+      <header class="toolrange__header">
+        <div class="toolrange__header-wrapper">
+          <div class="toolrange__header__left-group">
+            <a href="#" class="toolrange__header__logo">
+              <img src="./assets/imgs/home_page/logo.svg" alt="" />
+            </a>
+
+            <nav class="toolrange__header__navbar pc-on">
+              <div class="toolrange__header__navbar-item drop-down">
+                Products
+                <ul class="drop-down__list">
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">My Orders</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </div>
+              <a href="#" class="toolrange__header__navbar-item">GALLERIES</a>
+              <div class="toolrange__header__navbar-item drop-down">
+                ABOUT US
+                <ul class="drop-down__list">
+                  <li><a href="#">Our Business</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="toolrange__header__navbar-item drop-down">
+                Support
+                <ul class="drop-down__list">
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Account</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="toolrange__header__right-group">
+            <div class="toolrange__header__search">
+              <input type="text" placeholder="Search" />
+
+              <div class="toolrange__header__search-wrapper">
+                <div class="toolrange__header__search-box">
+                  <div class="box-input-wrapper">
+                    <input
+                      type="text"
+                      class="toolrange__input-search"
+                      placeholder="Mechanical"
+                      autofocus
+                    />
+                    <img src="./assets/imgs/common/svgs/close.svg" alt="" />
+                  </div>
+
+                  <ul class="toolrange__header__search-suggestions">
+                    <li>AARDWOLF Slab Lifter</li>
+                    <li>Vacuum Glass Lifter</li>
+                    <li>Kitchen Installation Cart- Pro Version</li>
+                    <li>Hydraulic brick scissor grab</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="toolrange__header__right-sub-group">
+              <a href="#" class="toolrange__cart">
+                <img src="./assets/imgs/common/svgs/cart.svg" alt="" />
+              </a>
+
+              <a href="#" class="toolrange__account">
+                <img src="./assets/imgs/common/svgs/user.svg" alt="" />
+              </a>
+
+              <div class="toolrange__language select-custom select-language">
+                <div class="select-custom__view select-language__view">
+                  <img src="./assets/imgs/common/svgs/flag_us.svg" alt="flag" />
+                </div>
+
+                <div class="select-custom__options select-language__options">
+                  <data
+                    value="us"
+                    class="select-custom__option select-language__option"
+                  >
+                    <img src="./assets/imgs/common/svgs/flag_us.svg" alt="us" />
+                  </data>
+                  <data
+                    value="us"
+                    class="select-custom__option select-language__option"
+                  >
+                    <img src="./assets/imgs/common/svgs/flag_vn.svg" alt="vn" />
+                  </data>
+                </div>
+              </div>
+
+              <div class="toolrange__header__navbar-icon">
+                <img src="./assets/imgs/common/svgs/navbar.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolrange__header__contact">
+          <div class="toolrange__header__phone">
+            <img src="./assets/imgs/common/svgs/phone_white.svg" alt="" />
+            <a href="">0983 945 604</a>
+          </div>
+          <div class="break"></div>
+          <div class="toolrange__header__mail">
+            <img src="./assets/imgs/common/svgs/mail_white.svg" alt="" />
+            <a href="">Send a message</a>
+          </div>
+        </div>
+
+        <div class="toolrange__header__search sp-on">
+          <img src="./assets/imgs/common/svgs/search.svg" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </header>
+
+      <div class="toolrange__categories-detail">
+        <h3 class="toolrange__categories-detail__title">
+          Mechanical Lifting Devices
+        </h3>
+
+        <div class="toolrange__categories-detail__content">
+          <div class="toolrange__categories-detail__filters">
+            <div class="toolrange__categories-detail__filters-head">
+              <p>Filters</p>
+              <button>Clear filters</button>
+            </div>
+
+            <div class="toolrange__categories-detail__filters-box">
+              <label for="">Weight Load Limit</label>
+              <div class="filters-select select-custom select-common">
+                <input type="text" value="All Capacities" readonly />
+
+                <div class="select-custom__options">
+                  <data value="All Capacities" class="select-custom__option"
+                    >All Capacities</data
+                  >
+                  <data value="Capacities" class="select-custom__option"
+                    >Capacities</data
+                  >
+                </div>
+              </div>
+
+              <label for="">Product Weight</label>
+              <div class="filters-select select-custom select-common">
+                <input type="text" value="All Weights" readonly />
+
+                <div class="select-custom__options">
+                  <data value="All Weights" class="select-custom__option"
+                    >All Weights</data
+                  >
+                  <data value="Weights" class="select-custom__option"
+                    >Weights</data
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toolrange__categories-detail__group">
+            <div class="toolrange__categories-detail__sub-group">
+              <p>( <span class="total-item">28</span> ) Results found</p>
+
+              <div class="toolrange__categories-detail__sort">
+                <p>Sort by: <span class="sort-by__value"></span></p>
+
+                <div class="sort__options">
+                  <data value="Price increase">Price increase</data>
+                  <data value="Price decrease">Price decrease</data>
+                  <data value="New">New</data>
+                  <data value="Old">Old</data>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="toolrange__categories-detail__list toolrange__products__list"
+            >
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+              <a href="#" class="toolrange__products__item">
+                <div class="product-img">
+                  <img
+                    src="./assets/imgs/common/products/product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>AARDWOLF Slab Lifter AL60</p>
+                  <p>800$</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="toolrange__categories-detail__pagination">
+              <button class="pagination-btn btn-prev btn-disable"></button>
+              <button class="pagination-btn btn-page-number btn-active">1</button>
+              <button class="pagination-btn btn-page-number">2</button>
+              <button class="pagination-btn btn-event-none">...</button>
+              <button class="pagination-btn btn-page-number">5</button>
+              <button class="pagination-btn btn-next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="toolrange__footer">
+        <div class="toolrange__footer__content">
+          <div class="toolrange__footer__grid-item">
+            <a href="#" class="toolrange__footer__content-logo">
+              <img src="./assets/imgs/home_page/logo.svg" alt="" />
+            </a>
+
+            <div class="toolrange__footer__content-info">
+              <h4>TOOLRANGE ASIA</h4>
+              <ul>
+                <li>
+                  <img src="./assets/imgs/common/svgs/address.svg" alt="" />
+                  <p>17 KP Binh Thuan 2, Thuan An, Binh Duong, Vietnam</p>
+                </li>
+                <li>
+                  <img src="./assets/imgs/common/svgs/clock.svg" alt="" />
+                  <p>Monday - Friday 07:30 AM - 5:00 PM</p>
+                </li>
+                <li>
+                  <img src="./assets/imgs/common/svgs/envelope.svg" alt="" />
+                  <p>Send Us a Message</p>
+                </li>
+                <li>
+                  <img src="./assets/imgs/common/svgs/telephone.svg" alt="" />
+                  <p>0274 3712 839</p>
+                </li>
+              </ul>
+
+              <div class="toolrange__footer__content-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31337.294137202523!2d106.62440613289374!3d10.95115023310836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s17%20KP%20Binh%20Thuan%202%2C%20Thuan%20An%2C%20Binh%20Duong%2C%20Vietnam!5e0!3m2!1svi!2s!4v1742617149029!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="toolrange__footer__content-follow">
+              <h4>Follow us</h4>
+
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="./assets/imgs/common/svgs/facebook.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/imgs/common/svgs/youtube.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/imgs/common/svgs/linkedin.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/imgs/common/svgs/instagram.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/imgs/common/svgs/x.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+
+              <ul>
+                <li><img src="./assets/imgs/home_page/DMCA.png" alt="" /></li>
+                <li><img src="./assets/imgs/home_page/ISO.png" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="toolrange__footer__grid-item">
+            <h4>Categories</h4>
+            <ul>
+              <li>A-Frames</li>
+              <li>Crane, Forklift & Workshop Accessories</li>
+              <li>Cranes</li>
+              <li>Forklift Equipment</li>
+              <li>Mechanical Lifting Devices</li>
+              <li>Slab Racks & Posts</li>
+              <li>Trolleys</li>
+              <li>Vacuum Lifting Equipment</li>
+              <li>Vacuum Tube Lifting Equipment</li>
+              <li>Workshop Equipment</li>
+              <li>Workwear</li>
+            </ul>
+          </div>
+
+          <div class="toolrange__footer__grid-item">
+            <h4>About us</h4>
+            <ul>
+              <li>Our Business</li>
+              <li>Careers</li>
+              <li>Contact</li>
+              <li>Account</li>
+            </ul>
+
+            <h4>Shop</h4>
+            <ul>
+              <li>Home</li>
+              <li>Categories</li>
+              <li>Deals</li>
+              <li>Brands</li>
+              <li>Tracking Your Order</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <div class="toolrange__footer__grid-item">
+            <h4>Helpful links</h4>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Return Policy</li>
+              <li>Shipping Information</li>
+              <li>Newsletter Signup</li>
+              <li>Payment Methods</li>
+            </ul>
+
+            <h4>Feature posts</h4>
+            <ul>
+              <li>How To Move A Granite, Concrete Or Heavy, Countertop</li>
+              <li>What equipment is used for lifting?</li>
+              <li>How do you maintain lifting equipment?</li>
+              <li>How to lift and carry loads safely and correctly</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="toolrange__footer__reserved">
+          <p>Copyright © 2025 ToolRange. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

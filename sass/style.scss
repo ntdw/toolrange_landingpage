@@ -36,12 +36,14 @@
 //-------------------------------------------
 // Pages
 //-------------------------------------------
-// index
+// Index
 @import "./pages/p-index";
-// search
+// Search
 @import "./pages/p-search";
-// categories
+// Categories
 @import "./pages/p-categories";
+// Categories detail
+@import "./pages/p-categories-detail";
 
 //-------------------------------------------
 // component
@@ -53,6 +55,7 @@
 @import "./components/c-tabs";
 @import "./components/c-select-language";
 @import "./components/c-breadcrumbs";
+@import "./components/c-select-custom";
 
 //-------------------------------------------
 // state

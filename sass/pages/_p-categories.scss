@@ -3,6 +3,8 @@
     &__head {
       position: relative;
       width: 100%;
+      max-width: 2560px;
+      margin: 0 auto;
       height: 243px;
       padding: 31px 77px;
       background: linear-gradient(
@@ -33,6 +35,8 @@
 
     &__content {
       width: 100%;
+      max-width: 2560px;
+      margin: 0 auto;
       padding: 80px 80px 64px 80px;
       background-color: #f4f4f4;
 
@@ -46,7 +50,7 @@
         display: none;
       }
     }
-    
+
     &__content.show-all {
       padding: 80px 80px 312px 80px;
 
