@@ -6,12 +6,18 @@ $(".toolrange__input-search").addEventListener("input", function () {
   console.log("input search value: ", this.value);
 });
 
-$('.toolrange__header__search > input').addEventListener('focus', function() {
+$(".toolrange__header__search > input").addEventListener("focus", function () {
   $(".toolrange__header__search-wrapper").classList.add("show");
-})
+});
 
 $(".box-input-wrapper > img").addEventListener("click", function () {
   $(".toolrange__header__search-wrapper").classList.remove("show");
+});
+
+$$(".toolrange__header__search-suggestions > li").forEach((item) => {
+  item.addEventListener("click", function () {
+    $(".toolrange__input-search").value = this.innerText;
+  });
 });
 
 // Handle select
@@ -57,4 +63,10 @@ $$(".toolrange__tab").forEach((tab, i) => {
       }
     });
   });
+});
+
+// Handle show categories
+$(".categories-page__button-more").addEventListener("click", function () {
+  $(".toolrange__categories-page__content").classList.add("show-all");
+  this.classList.add("hide");
 });

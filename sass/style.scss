@@ -38,7 +38,10 @@
 //-------------------------------------------
 // index
 @import "./pages/p-index";
+// search
 @import "./pages/p-search";
+// categories
+@import "./pages/p-categories";
 
 //-------------------------------------------
 // component
@@ -49,6 +52,7 @@
 @import "./components/c-products";
 @import "./components/c-tabs";
 @import "./components/c-select-language";
+@import "./components/c-breadcrumbs";
 
 //-------------------------------------------
 // state

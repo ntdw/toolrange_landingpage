@@ -1,0 +1,43 @@
+.toolrange {
+  &__breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    > a {
+      color: #bababa;
+      font-family: "Kanit-Regular";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: 0.2s ease-out;
+
+      &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-image: url("../../assets/imgs/common/svgs/chevron_right_small_grey.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+
+      &:hover {
+        transform: unset;
+        text-decoration: underline;
+      }
+    }
+
+    > a.current {
+      color: #FFF;
+      pointer-events: none;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

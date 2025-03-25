@@ -365,12 +365,23 @@
         gap: 12px;
 
         > li {
+          width: calc(100% + 8px);
+          margin-left: -4px;
           color: #404040;
           font-family: "Kanit-Medium";
           font-size: 20px;
           font-weight: 500;
           line-height: normal;
           text-transform: capitalize;
+
+          padding: 0 4px;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: 0.2s ease-out;
+
+          &:hover {
+            background-color: #f3f3f3;
+          }
         }
       }
     }
