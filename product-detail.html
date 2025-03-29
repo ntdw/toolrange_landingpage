@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -214,68 +218,631 @@
           <div class="toolrange__prod-detail__description-blocks">
             <div class="toolrange__prod-detail__description-block">
               <p class="toolrange__prod-detail__description-tag">General</p>
-  
+
               <div class="toolrange__prod-detail__description-content">
                 <p>
-                  Aardwolf proudly introduces an enhancement to its renowned range
-                  of Aardwolf Slab Lifting Clamps, originally conceived and
-                  patented by the company's founder, James Edmund Corbett.  These
-                  updated Aardwolf slab lifting clamps now incorporate two support
-                  rollers.  These rollers not only safeguard the top edge of the
-                  slabs during lifting but also permit manual centering by hand. 
-                  Additionally, the Aardwolf Slab Lifting Clamps offer the option
-                  of an integrated auto-lock and unlock mechanism, another
-                  innovation credited to James Edmund Corbett.  This mechanism
-                  facilitates the automatic gripping of slabs during pickup and
-                  release when setting them down.
+                  Aardwolf proudly introduces an enhancement to its renowned
+                  range of Aardwolf Slab Lifting Clamps, originally conceived
+                  and patented by the company's founder, James Edmund Corbett. 
+                  These updated Aardwolf slab lifting clamps now incorporate two
+                  support rollers.  These rollers not only safeguard the top
+                  edge of the slabs during lifting but also permit manual
+                  centering by hand.  Additionally, the Aardwolf Slab Lifting
+                  Clamps offer the option of an integrated auto-lock and unlock
+                  mechanism, another innovation credited to James Edmund
+                  Corbett.  This mechanism facilitates the automatic gripping of
+                  slabs during pickup and release when setting them down.
                 </p>
               </div>
             </div>
-  
+
             <div class="toolrange__prod-detail__description-block">
-              <p class="toolrange__prod-detail__description-tag">Key Features</p>
-  
+              <p class="toolrange__prod-detail__description-tag">
+                Key Features
+              </p>
+
               <div class="toolrange__prod-detail__description-content">
                 <p>
-                  Aardwolf proudly introduces an enhancement to its renowned range
-                  of Aardwolf Slab Lifting Clamps, originally conceived and
-                  patented by the company's founder, James Edmund Corbett.  These
-                  updated Aardwolf slab lifting clamps now incorporate two support
-                  rollers.  These rollers not only safeguard the top edge of the
-                  slabs during lifting but also permit manual centering by hand. 
-                  Additionally, the Aardwolf Slab Lifting Clamps offer the option
-                  of an integrated auto-lock and unlock mechanism, another
-                  innovation credited to James Edmund Corbett.  This mechanism
-                  facilitates the automatic gripping of slabs during pickup and
-                  release when setting them down.
+                  Aardwolf proudly introduces an enhancement to its renowned
+                  range of Aardwolf Slab Lifting Clamps, originally conceived
+                  and patented by the company's founder, James Edmund Corbett. 
+                  These updated Aardwolf slab lifting clamps now incorporate two
+                  support rollers.  These rollers not only safeguard the top
+                  edge of the slabs during lifting but also permit manual
+                  centering by hand.  Additionally, the Aardwolf Slab Lifting
+                  Clamps offer the option of an integrated auto-lock and unlock
+                  mechanism, another innovation credited to James Edmund
+                  Corbett.  This mechanism facilitates the automatic gripping of
+                  slabs during pickup and release when setting them down.
                 </p>
               </div>
             </div>
-  
+
             <div class="toolrange__prod-detail__description-block">
               <p class="toolrange__prod-detail__description-tag">General</p>
-  
+
               <div class="toolrange__prod-detail__description-content">
                 <img
-                  src="./assets/imgs/common/specifications.png"
                   srcset="./assets/imgs/common/specifications.png 2x"
                   alt=""
                 />
               </div>
             </div>
 
-            <div class="toolrange__prod-detail__description-block">
+            <div class="toolrange__prod-detail__description-block block-tab">
               <div class="toolrange__prod-detail__description-tabs">
-                <button class="toolrange__prod-detail__description-tab tab-active">Image</button>
-                <button class="toolrange__prod-detail__description-tab">Video</button>
+                <button
+                  data-tab="image"
+                  class="toolrange__prod-detail__description-tab tab-active"
+                >
+                  Image
+                </button>
+                <button
+                  data-tab="video"
+                  class="toolrange__prod-detail__description-tab"
+                >
+                  Video
+                </button>
               </div>
 
               <div class="toolrange__prod-detail__description-views">
-                <div class="toolrange__prod-detail__description-view-img">
-                  
+                <div
+                  data-view="image"
+                  class="toolrange__prod-detail__description-view view-img view-active"
+                >
+                  <div class="img-left">
+                    <img src="./assets/imgs/common/product/img-5.png" alt="" />
+                  </div>
+
+                  <div class="img-right">
+                    <div class="img-right-top">
+                      <img
+                        src="./assets/imgs/common/product/img-6.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="img-right-bottom">
+                      <img
+                        src="./assets/imgs/common/product/img-7.png"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/imgs/common/product/img-7.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-view="video"
+                  class="toolrange__prod-detail__description-view view-video"
+                >
+                  <iframe
+                    width="100%"
+                    height="658"
+                    src="https://www.youtube.com/embed/wGuSemlUfhg?si=18SA4CJtYOpyLSdU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="toolrange__prod-detail__reviews non-first">
+          <h3 class="toolrange__prod-detail__reviews-title">
+            Customer Reviews
+          </h3>
+
+          <div class="toolrange__prod-detail__reviews-group">
+            <div class="toolrange__prod-detail__reviews-sub-group">
+              <p class="average-number-of-stars">4.3</p>
+              <div>
+                <div class="toolrange__prod-detail__reviews-stars">
+                  <data
+                    value="5"
+                    class="toolrange__prod-detail__reviews-star"
+                  ></data>
+                  <data
+                    value="4"
+                    class="toolrange__prod-detail__reviews-star star-active"
+                  ></data>
+                  <data
+                    value="3"
+                    class="toolrange__prod-detail__reviews-star star-active"
+                  ></data>
+                  <data
+                    value="2"
+                    class="toolrange__prod-detail__reviews-star star-active"
+                  ></data>
+                  <data
+                    value="1"
+                    class="toolrange__prod-detail__reviews-star star-active"
+                  ></data>
+                </div>
+
+                <p class="total-rating">Be the first to write a review</p>
+              </div>
+            </div>
+
+            <div class="line-break"></div>
+
+            <button class="toolrange__prod-detail__reviews-btn">
+              WRITE A REVIEW
+            </button>
+          </div>
+
+          <div class="toolrange__prod-detail__reviews-wrapper">
+            <ul class="review-list">
+              <li class="review-item">
+                <p class="review-item__title">Be the first to write a review</p>
+
+                <div
+                  class="toolrange__prod-detail__reviews-stars review-item__stars"
+                >
+                  <data
+                    value="5"
+                    class="toolrange__prod-detail__reviews-star review-item__star"
+                  ></data>
+                  <data
+                    value="4"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="3"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="2"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="1"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                </div>
+
+                <p class="review-item__message">
+                  Just wanted to give a shoutout to [team member] for their hard
+                  work on this task, it's really paying; Just wanted to give a
+                  shoutout to [team member] for their hard work on this task,
+                  it's really payingJust wanted to give a shoutout to [team
+                  member] for their hard work on this task, it's really paying
+                </p>
+              </li>
+              <li class="review-item">
+                <p class="review-item__title">Great experience overall</p>
+
+                <div
+                  class="toolrange__prod-detail__reviews-stars review-item__stars"
+                >
+                  <data
+                    value="5"
+                    class="toolrange__prod-detail__reviews-star review-item__star"
+                  ></data>
+                  <data
+                    value="4"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="3"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="2"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="1"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                </div>
+
+                <p class="review-item__message">
+                  The project exceeded my expectations and the collaboration was
+                  seamless; The project exceeded my expectations and the
+                  collaboration was seamlessThe project exceeded my expectations
+                  and the collaboration was seamless.
+                </p>
+              </li>
+              <li class="review-item">
+                <p class="review-item__title">Highly recommend this service</p>
+
+                <div
+                  class="toolrange__prod-detail__reviews-stars review-item__stars"
+                >
+                  <data
+                    value="5"
+                    class="toolrange__prod-detail__reviews-star review-item__star"
+                  ></data>
+                  <data
+                    value="4"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="3"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="2"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="1"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                </div>
+
+                <p class="review-item__message">
+                  The team was professional and delivered on time; The team was
+                  professional and delivered on timeThe team was professional
+                  and delivered on time.
+                </p>
+              </li>
+              <li class="review-item">
+                <p class="review-item__title">Fantastic results and support</p>
+
+                <div
+                  class="toolrange__prod-detail__reviews-stars review-item__stars"
+                >
+                  <data
+                    value="5"
+                    class="toolrange__prod-detail__reviews-star review-item__star"
+                  ></data>
+                  <data
+                    value="4"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="3"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="2"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                  <data
+                    value="1"
+                    class="toolrange__prod-detail__reviews-star review-item__star star-active"
+                  ></data>
+                </div>
+
+                <p class="review-item__message">
+                  Every question I had was answered promptly and thoroughly;
+                  Every question I had was answered promptly and thoroughlyEvery
+                  question I had was answered promptly and thoroughly.
+                </p>
+              </li>
+            </ul>
+
+            <div class="review-pagination">
+              <button class="review-pagination__btn btn-prev disable"></button>
+              <button class="review-pagination__btn btn-page page-active">
+                1
+              </button>
+              <button class="review-pagination__btn btn-page">2</button>
+              <button class="review-pagination__btn btn-page">3</button>
+              <button class="review-pagination__btn btn-page">4</button>
+              <button class="review-pagination__btn btn-page">5</button>
+              <button class="review-pagination__btn btn-none">...</button>
+              <button class="review-pagination__btn btn-page">10</button>
+              <button class="review-pagination__btn btn-next"></button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="toolrange__prod-detail__slider recommended-combinations__slider swiper recommendedCombinationsSwiper"
+        >
+          <div class="toolrange__prod-detail__slider-group">
+            <p class="toolrange__prod-detail__slider-title">
+              Recommended Combinations
+            </p>
+
+            <div class="toolrange__prod-detail__slider-actions">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="toolrange__prod-detail__slider-slides swiper-wrapper">
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-24.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Twister</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-25.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Aardwolf Forged Aluminium Swivel</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-26.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Aardwolf – Powered Counterbalance Crane</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-27.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Aardwolf Alloy Steel Swivel Hooks</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-28.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Swivel Chain Lifting Lug</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-24.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Twister</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-25.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Aardwolf Forged Aluminium Swivel</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-26.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Aardwolf – Powered Counterbalance Crane</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-27.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Aardwolf Alloy Steel Swivel Hooks</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="toolrange__prod-detail__slider recommended-combinations__slider swiper ymalSwiper"
+        >
+          <div class="toolrange__prod-detail__slider-group">
+            <p class="toolrange__prod-detail__slider-title">
+              You Might Also Like
+            </p>
+
+            <div class="toolrange__prod-detail__slider-actions">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="toolrange__prod-detail__slider-slides swiper-wrapper">
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-29.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>AARDWOLF Slab Lifter</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-30.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Vacuum Glass Lifter</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-31.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Kitchen Installation Cart- Pro Version</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-32.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Hydraulic brick scissor grab</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-33.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Drill Guide Assembly</p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-29.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>AARDWOLF Slab Lifter</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-30.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Vacuum Glass Lifter</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-31.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Kitchen Installation Cart- Pro Version</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="toolrange__prod-detail__slider-slide swiper-slide"
+            >
+              <div class="slide-img">
+                <img
+                  src="./assets/imgs/common/products/product-32.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="img-content">
+                <p>Hydraulic brick scissor grab</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -422,6 +989,8 @@
       </footer>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

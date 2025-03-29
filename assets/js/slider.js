@@ -31,3 +31,31 @@ const swiper3 = new Swiper(".galleriesSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Slider 4
+const swiper4 = new Swiper(".recommendedCombinationsSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// Slider 5
+const swiper5 = new Swiper(".ymalSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

@@ -65,6 +65,30 @@ $$(".toolrange__tab").forEach((tab, i) => {
   });
 });
 
+$$('.toolrange__prod-detail__description-tab').forEach((tab, i) => {
+  tab.addEventListener("click", function () {
+    
+    let thisTab = this.dataset.tab;
+
+    $$(".toolrange__prod-detail__description-tab").forEach((tab2, i2) => {
+      if (i !== i2) {
+        tab2.classList.remove("tab-active");
+      }
+    });
+
+    this.classList.add("tab-active");
+
+    $$(".toolrange__prod-detail__description-view").forEach((view) => {
+      let thisView = view.dataset.view;
+      if (thisTab === thisView) {
+        view.classList.add("view-active");
+      } else {
+        view.classList.remove("view-active");
+      }
+    });
+  });
+})
+
 // Handle show categories
 $(".categories-page__button-more") &&
   $(".categories-page__button-more").addEventListener("click", function () {
